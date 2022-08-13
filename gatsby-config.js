@@ -5,6 +5,7 @@ module.exports = {
     url: "https://lorogranada.com/",
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     `gatsby-plugin-anchor-links`,
