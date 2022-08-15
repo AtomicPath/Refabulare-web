@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { device } from "devices"
+import device from "devices"
 
 const Menu = styled.ul`
   background-color: var(--color-white);

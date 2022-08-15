@@ -7,7 +7,7 @@ import {
   MenuItem,
   OpenMobileMenuButton,
 } from "./Atoms/Header"
-import Container from "./Grid/Container"
+import Container from "./Atoms/Grid/Container"
 
 const menuItems = [
   {
