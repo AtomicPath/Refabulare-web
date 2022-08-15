@@ -1,11 +1,20 @@
 import React from 'react'
+import styled from "styled-components"
+import { Logo } from "./Atoms/Footer"
+import Container from "./Grid/Container"
 
 const Footer = () => {
   return (
-    <footer>
-      el footer
-    </footer>
+    <FooterWrapper>
+      <Container>
+        <Logo src="logo-footer.svg" />
+      </Container>
+    </FooterWrapper>
   )
 }
+
+const FooterWrapper = styled.footer`
+  background-color: var(--color-white);
+`
 
 export default Footer

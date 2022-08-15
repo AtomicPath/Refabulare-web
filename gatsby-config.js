@@ -5,6 +5,7 @@ module.exports = {
     url: "https://lorogranada.com/",
   },
   plugins: [
+    `gatsby-plugin-root-import`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
@@ -40,7 +41,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `images/icon.png`, // This path is relative to the root of the site.
       },
     },
     /* {

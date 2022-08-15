@@ -1,16 +1,17 @@
 import React from "react"
 import Footer from "./footer"
 import Header from "./header"
-import "../theme.css"
 import Container from "./Grid/Container"
+import "normalize.css"
+import "../theme.css"
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <Header />
-      <Container>{children}</Container>
+      <Container css={"min-height: 100vh"}>{children}</Container>
       <Footer />
-    </div>
+    </>
   )
 }
 
