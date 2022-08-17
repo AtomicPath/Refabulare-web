@@ -1,14 +1,15 @@
+import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Hero from "../components/Molecules/Hero"
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
     <>
       <Hero
-        title="Transformemos nuestra historia"
-        image={<StaticImage src="../images/hero-david.png" />}
-      />
+        title="title"
+        image={<StaticImage src="../images/hero.png" alt="refabulare" />}
+      ></Hero>
     </>
   )
 }
