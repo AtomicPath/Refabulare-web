@@ -16,26 +16,23 @@ const HeaderMenu = styled.ul`
   right: 0;
   text-align: center;
   top: 0;
-  transition: transform 0.3s;
+  transition: transform 0.3s, position 0.3s;
   z-index: 99;
 
   &.closed {
     transform: translateX(100%);
   }
 
-  ${device.tablet} {
+  ${device.laptop} {
     background-color: transparent;
     flex-direction: row;
     position: relative;
-    transform: translateX(0);
+    transform: none;
+    gap: calc(30px + 1.5rem);
 
     &.closed {
-      transform: translateX(0);
+      transform: none;
     }
-  }
-
-  ${device.laptop} {
-    gap: calc(30px + 1.5rem);
   }
 `
 

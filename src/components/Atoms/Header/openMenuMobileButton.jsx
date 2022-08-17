@@ -26,7 +26,7 @@ const OpenMenuMobileButton = styled.button`
     left: 30px;
   `}
 
-  ${device.tablet} {
+  ${device.laptop} {
     display: none;
   }
 `

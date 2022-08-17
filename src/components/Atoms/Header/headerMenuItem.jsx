@@ -15,7 +15,7 @@ const HeaderMenuItem = styled.li`
     }
   }
 
-  ${device.tablet} {
+  ${device.laptop} {
     a {
       color: var(--color-white);
       font-size: 1rem;

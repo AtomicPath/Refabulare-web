@@ -1,4 +1,4 @@
-import LogoSmallWhite from './LogoSmallWhite'
+import IsotypeWhite from './isotypeWhite'
 import LogoFullBlack from './LogoFullBlack'
 
-export { LogoSmallWhite, LogoFullBlack }
+export { IsotypeWhite, LogoFullBlack }

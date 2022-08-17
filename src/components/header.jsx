@@ -7,7 +7,8 @@ import {
   OpenMenuMobileButton,
 } from "./Atoms/Header"
 import { Container } from "./Atoms/Grid"
-import { LogoSmallWhite } from "./Atoms/Images"
+import { IsotypeWhite } from "./Atoms/Images"
+import device from "devices"
 
 const menuItems = [
   {
@@ -51,7 +52,15 @@ const Header = () => {
         `}
       >
         <Link to="/">
-          <LogoSmallWhite src="/logo-white.png" alt="Header" />
+          <IsotypeWhite
+            css={`
+              display: none;
+
+              ${device.tablet} {
+                display: block;
+              }
+            `}
+          />
         </Link>
 
         <OpenMenuMobileButton onClick={toggleMenu} menuOpen={menuOpen}>

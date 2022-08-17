@@ -7,12 +7,15 @@ const HeaderWrapper = styled.div`
   left: 0;
   right: 0;
   z-index: 100;
+  max-width: 100vw;
 
   &.opened {
     position: fixed;
   }
 
-  ${device.tablet} {
+  ${device.laptop} {
+    overflow-x: hidden;
+
     &.opened {
       position: relative;
     }

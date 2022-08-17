@@ -10,7 +10,17 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     `gatsby-plugin-anchor-links`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `tracedSVG`,
+          quality: 95,
+          backgroundColor: `transparent`,
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
