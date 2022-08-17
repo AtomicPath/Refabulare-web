@@ -2,12 +2,12 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import {
   HeaderWrapper,
-  Logo,
-  Menu,
-  MenuItem,
-  OpenMobileMenuButton,
+  HeaderMenu,
+  HeaderMenuItem,
+  OpenMenuMobileButton,
 } from "./Atoms/Header"
-import Container from "./Atoms/Grid/Container"
+import { Container } from "./Atoms/Grid"
+import { LogoSmallWhite } from "./Atoms/Images"
 
 const menuItems = [
   {
@@ -51,20 +51,20 @@ const Header = () => {
         `}
       >
         <Link to="/">
-          <Logo src="/logo-white.png" alt="Header" />
+          <LogoSmallWhite src="/logo-white.png" alt="Header" />
         </Link>
 
-        <OpenMobileMenuButton onClick={toggleMenu} menuOpen={menuOpen}>
+        <OpenMenuMobileButton onClick={toggleMenu} menuOpen={menuOpen}>
           {menuOpen ? (
             <img src="/icono-close.svg" alt="Menu" />
           ) : (
             <img src="/icono-menu-mobile.svg" alt="Menu" />
           )}
-        </OpenMobileMenuButton>
+        </OpenMenuMobileButton>
 
-        <Menu className={menuOpen ? "" : "closed"}>
+        <HeaderMenu className={menuOpen ? "" : "closed"}>
           {menuItems.map((item, index) => (
-            <MenuItem key={index} onClick={toggleMenu}>
+            <HeaderMenuItem key={index} onClick={toggleMenu}>
               {item.external ? (
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                   {item.name}
@@ -72,9 +72,9 @@ const Header = () => {
               ) : (
                 <Link to={item.link}>{item.name}</Link>
               )}
-            </MenuItem>
+            </HeaderMenuItem>
           ))}
-        </Menu>
+        </HeaderMenu>
       </Container>
     </HeaderWrapper>
   )

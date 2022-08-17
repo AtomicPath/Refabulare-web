@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import device from "devices"
 
-const Logo = styled.img`
+const logoSmallWhite = styled.img`
   max-width: 100px;
   z-index: 100;
   display: none;
@@ -11,4 +11,4 @@ const Logo = styled.img`
   }
 `
 
-export default Logo
+export default logoSmallWhite

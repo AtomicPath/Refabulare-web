@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import device from "devices"
 
-const MenuItem = styled.li`
+const HeaderMenuItem = styled.li`
   text-transform: uppercase;
 
   a {
@@ -23,4 +23,4 @@ const MenuItem = styled.li`
   }
 `
 
-export default MenuItem
+export default HeaderMenuItem

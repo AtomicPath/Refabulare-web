@@ -1,7 +1,11 @@
-import HeaderWrapper from "./HeaderWrapper"
-import Menu from "./Menu"
-import MenuItem from "./MenuItem"
-import Logo from "./Logo"
-import OpenMobileMenuButton from "./OpenMobileMenuButton"
+import HeaderMenu from './headerMenu'
+import HeaderMenuItem from './headerMenuItem'
+import HeaderWrapper from './headerWrapper'
+import OpenMenuMobileButton from './openMenuMobileButton'
 
-export { HeaderWrapper, Menu, MenuItem, Logo, OpenMobileMenuButton }
+export {
+  HeaderMenu,
+  HeaderMenuItem,
+  HeaderWrapper,
+  OpenMenuMobileButton
+}

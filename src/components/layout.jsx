@@ -1,7 +1,7 @@
 import React from "react"
 import Footer from "./footer"
 import Header from "./header"
-import Container from "./Atoms/Grid/Container"
+import { Container } from "./Atoms/Grid"
 import "normalize.css"
 import "../theme.css"
 

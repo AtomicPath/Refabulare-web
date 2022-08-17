@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import device from "devices"
 
-const OpenMobileMenuButton = styled.button`
+const OpenMenuMobileButton = styled.button`
   background: none;
   border: none;
   color: var(--color-blanco);
@@ -31,4 +31,4 @@ const OpenMobileMenuButton = styled.button`
   }
 `
 
-export default OpenMobileMenuButton
+export default OpenMenuMobileButton

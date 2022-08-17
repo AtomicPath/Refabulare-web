@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react"
 import styled from "styled-components"
-import { Logo } from "./Atoms/Footer"
-import Container from "./Atoms/Grid/Container"
+import { Container } from "./Atoms/Grid"
+import { LogoFullBlack } from "./Atoms/Images"
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <Container>
-        <Logo src="logo-footer.svg" />
+        <LogoFullBlack />
       </Container>
     </FooterWrapper>
   )

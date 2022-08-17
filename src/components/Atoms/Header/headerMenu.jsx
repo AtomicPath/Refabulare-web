@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import device from "devices"
 
-const Menu = styled.ul`
+const HeaderMenu = styled.ul`
   background-color: var(--color-white);
   bottom: 0;
   display: flex;
@@ -39,4 +39,4 @@ const Menu = styled.ul`
   }
 `
 
-export default Menu
+export default HeaderMenu

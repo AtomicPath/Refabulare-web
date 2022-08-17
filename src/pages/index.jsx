@@ -1,7 +1,16 @@
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
+import Hero from "../components/Molecules/Hero"
 
 const Home = () => {
-  return <div>Hello world!</div>
+  return (
+    <>
+      <Hero
+        title="Transformemos nuestra historia"
+        image={<StaticImage src="../images/hero-david.png" />}
+      />
+    </>
+  )
 }
 
 export default Home
@@ -14,4 +23,3 @@ export const Head = () => (
     <meta name="description" content="Hello World" />
   </>
 )
-
