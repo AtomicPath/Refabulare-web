@@ -6,7 +6,6 @@ const HeaderMenuItem = styled.li`
 
   a {
     color: var(--color-black);
-    font-weight: bold;
     font-size: 20px;
     transition: color 0.3s;
 
