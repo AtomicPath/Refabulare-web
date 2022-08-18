@@ -7,8 +7,18 @@ import { HeroTitle } from "../Atoms/Hero"
 const Hero = ({ image, title }) => {
   return (
     <HeroWrapper>
+      <HeroTitle
+        css={`
+          margin: 0 0 -150px 0;
+
+          ${device.tablet} {
+            margin: 0;
+          }
+        `}
+      >
+        {title}
+      </HeroTitle>
       <HeroImagen>{image}</HeroImagen>
-      <HeroTitle>{title}</HeroTitle>
     </HeroWrapper>
   )
 }
@@ -21,16 +31,20 @@ const HeroWrapper = styled(Container)`
   grid-template-columns: 1fr;
   align-items: center;
   grid-template-areas:
-    "image"
-    "title";
+    "title"
+    "image";
+  text-align: center;
+
+  ${device.tablet} {
+    text-align: left;
+    grid-template-columns: 3fr 4fr;
+    grid-template-areas: "image title";
+  }
 `
 
 const HeroImagen = styled.div`
   grid-area: image;
-  position: relative;
-
-  ${device.tablet} {
-  }
+  transform: scale(3);
 `
 
 export default Hero
