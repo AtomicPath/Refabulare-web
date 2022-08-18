@@ -54,18 +54,5 @@ module.exports = {
         icon: `images/icon.png`, // This path is relative to the root of the site.
       },
     },
-    /* {
-      resolve: `gatsby-plugin-webfonts`,
-      options: {
-        fonts: {
-          google: [
-            {
-              family: "Montserrat",
-              variants: ["300", "400", "700"],
-            },
-          ],
-        },
-      },
-    }, */
   ],
 }

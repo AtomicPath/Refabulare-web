@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Helvetica.ttf ") format("trueType");
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Helvetica-Bold-Font.ttf ") format("trueType");
+}
+
+@font-face {
+  font-family: 'Hoefler';
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/HoeflerText-Regular.ttf") format("trueType");
+}
+
+@font-face {
+  font-family: 'Hoefler';
+  font-style: normal;
+  font-weight: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/HoeflerText-Black.ttf") format("trueType");
+}
+
+@font-face {
+  font-family: 'Hoefler';
+  font-style: italic;
+  font-weight: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/HoeflerText-Italic.ttf") format("trueType");
+}
+
+@font-face {
+  font-family: 'Hoefler';
+  font-style: italic;
+  font-weight: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/HoeflerText-BlackItalic.ttf") format("trueType");
+}

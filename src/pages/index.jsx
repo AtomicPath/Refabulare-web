@@ -1,4 +1,3 @@
-import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Hero from "../components/Molecules/Hero"
