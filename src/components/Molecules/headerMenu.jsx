@@ -1,7 +1,28 @@
+import React from "react"
 import styled from "styled-components"
+import { HeaderMenuItem } from "components/Atoms"
+import { Link } from "gatsby"
 import device from "devices"
 
-const HeaderMenu = styled.ul`
+const HeaderMenu = ({ menuItems, className, toggleMenu }) => {
+  return (
+    <Menu className={className}>
+      {menuItems.map((item, index) => (
+        <HeaderMenuItem key={index} onClick={toggleMenu}>
+          {item.external ? (
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              {item.name}
+            </a>
+          ) : (
+            <Link to={item.link}>{item.name}</Link>
+          )}
+        </HeaderMenuItem>
+      ))}
+    </Menu>
+  )
+}
+
+const Menu = styled.ul`
   background-color: var(--color-white);
   bottom: 0;
   display: flex;

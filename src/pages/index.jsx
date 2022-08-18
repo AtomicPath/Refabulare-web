@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import Hero from "../components/Molecules/Hero"
+import Hero from "../components/Molecules/hero"
 
 const Home = ({ data }) => {
   return (

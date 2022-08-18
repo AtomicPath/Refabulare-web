@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import device from "devices"
-import { Container } from "../Atoms/Grid"
-import { HeroTitle } from "../Atoms/Hero"
+import { HeroImagen, HeroTitle, Container } from "components/Atoms"
 
 const Hero = ({ image, title }) => {
   return (
@@ -35,11 +34,6 @@ const HeroWrapper = styled(Container)`
   ${device.laptop} {
     grid-template-columns: 3fr 4fr;
   }
-`
-
-const HeroImagen = styled.div`
-  grid-area: image;
-  transform: scale(3);
 `
 
 export default Hero

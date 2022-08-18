@@ -1,13 +1,36 @@
 import React from "react"
-import Footer from "./footer"
-import Header from "./header"
 import "normalize.css"
-import "../theme.css"
+import "theme.css"
+import { Footer, Header } from "./Organisms"
+
+const menuItems = [
+  {
+    name: "Refabulare",
+    link: "/",
+  },
+  {
+    name: "Sobre mí",
+    link: "/about",
+  },
+  {
+    name: "Servicios",
+    link: "/contact",
+  },
+  {
+    name: "Newsletter",
+    link: "/contact",
+  },
+  {
+    name: "Podcast",
+    link: "https://open.spotify.com/show/0T5PV5lGieTVJCNqIB1j2G",
+    external: true,
+  },
+]
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      <Header menuItems={menuItems} />
       <main>{children}</main>
       <Footer />
     </>

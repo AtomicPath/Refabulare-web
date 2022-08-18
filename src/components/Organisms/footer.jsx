@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Container } from "./Atoms/Grid"
-import { LogoFullBlack } from "./Atoms/Images"
+import { Container, LogoFullBlack } from "../Atoms"
 
 const Footer = () => {
   return (

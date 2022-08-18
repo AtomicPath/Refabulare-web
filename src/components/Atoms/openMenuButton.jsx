@@ -1,7 +1,20 @@
+import React from "react"
 import styled from "styled-components"
 import device from "devices"
 
-const OpenMenuMobileButton = styled.button`
+const OpenMenuButton = ({ onClick, isMenuOpen }) => {
+  return (
+    <Button onClick={onClick} isMenuOpen={isMenuOpen}>
+      {isMenuOpen ? (
+        <img src="/icono-close.svg" alt="Menu" />
+      ) : (
+        <img src="/icono-menu-mobile.svg" alt="Menu" />
+      )}
+    </Button>
+  )
+}
+
+const Button = styled.button`
   background: none;
   border: none;
   color: var(--color-blanco);
@@ -19,8 +32,8 @@ const OpenMenuMobileButton = styled.button`
   align-items: center;
   justify-content: center;
 
-  ${({ menuOpen }) =>
-    menuOpen &&
+  ${({ isMenuOpen }) =>
+    isMenuOpen &&
     `
     right: auto;
     left: 30px;
@@ -31,4 +44,4 @@ const OpenMenuMobileButton = styled.button`
   }
 `
 
-export default OpenMenuMobileButton
+export default OpenMenuButton
