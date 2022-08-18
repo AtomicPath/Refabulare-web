@@ -7,7 +7,7 @@ const Home = ({ data }) => {
   return (
     <>
       <Hero
-        title="title"
+        title="Transformemos nuestra historia"
         image={<StaticImage src="../images/hero.png" alt="refabulare" />}
       ></Hero>
     </>

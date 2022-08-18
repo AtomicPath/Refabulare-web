@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const LogoFullBlack = props => {
-  return <Image src="/footer-logo.svg" {...props} />
+  return <Image src="/logo-full-black.svg" {...props} />
 }
 
 const Image = styled.img`
