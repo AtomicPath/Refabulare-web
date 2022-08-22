@@ -5,6 +5,7 @@ import HeroTitle from './heroTitle'
 import IsotypeWhite from './isotypeWhite'
 import LogoFullBlack from './logoFullBlack'
 import OpenMenuButton from './openMenuButton'
+import StrongHoefler from './strongHoefler'
 
 export {
   Container,
@@ -13,5 +14,6 @@ export {
   HeroTitle,
   IsotypeWhite,
   LogoFullBlack,
-  OpenMenuButton
+  OpenMenuButton,
+  StrongHoefler,
 }
