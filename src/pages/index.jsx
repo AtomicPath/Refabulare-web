@@ -2,7 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import styled from 'styled-components'
 import { Container, StrongHoefler } from '../components/Atoms'
-import Hero from '../components/Molecules'
+import { Hero } from '../components/Molecules'
 import device from 'devices'
 
 const Home = ({ data }) => {
