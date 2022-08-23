@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Refabulare.",
     description: "Agregar la descripción aqui.",
-    url: "https://lorogranada.com/",
+    siteUrl: "https://lorogranada.com/",
   },
   plugins: [
     `gatsby-plugin-root-import`,
@@ -45,8 +45,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Lorogranada`,
-        short_name: `Lorogranada`,
+        name: `Refabulare`,
+        short_name: `Refabulare`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
