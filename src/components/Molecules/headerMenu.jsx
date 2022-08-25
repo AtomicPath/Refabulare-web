@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "styled-components"
-import { HeaderMenuItem } from "components/Atoms"
-import { Link } from "gatsby"
-import device from "devices"
+import React from 'react'
+import styled from 'styled-components'
+import { HeaderMenuItem } from 'components/Atoms'
+import { Link } from 'gatsby'
+import device from 'devices'
 
 const HeaderMenu = ({ menuItems, className, toggleMenu }) => {
   return (

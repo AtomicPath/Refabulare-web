@@ -1,5 +1,5 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import { Container, StrongHoefler } from '../components/Atoms'
 import { Hero } from '../components/Molecules'
@@ -12,7 +12,7 @@ const Home = ({ data }) => {
       <About as="section">
         <div>
           <h2>Que es...</h2>
-          <Gif src="/logo-animado.gif" />
+          <StaticImage src="../images/logo-full.png" />
           <h3>Acompañamiento para la transformación existencial.</h3>
           <p>
             Es posible <StrongHoefler>diseñar tu propio futuro</StrongHoefler>
@@ -305,6 +305,29 @@ const Home = ({ data }) => {
             hacia tu futuro.
           </h4>
         </Container>
+
+        <Container>
+          <div
+            css={`
+              ${device.tablet} {
+                display: none;
+              }
+            `}
+          >
+            <StaticImage src="../images/libreta.png" />
+          </div>
+          <div
+            css={`
+              display: none;
+
+              ${device.tablet} {
+                display: block;
+              }
+            `}
+          >
+            <StaticImage src="../images/libreta-desktop.png" />
+          </div>
+        </Container>
       </div>
 
       <BoxedSection
@@ -316,6 +339,20 @@ const Home = ({ data }) => {
           }
         `}
       >
+        <div
+          css={`
+            .gatsby-image-wrapper {
+              width: 100;
+            }
+
+            ${device.tablet} {
+              display: none;
+            }
+          `}
+        >
+          <StaticImage src="../images/cabeza-escultura.png" alt="cabeza escultura" />
+        </div>
+
         <Container
           css={`
             z-index: 1;
@@ -338,19 +375,28 @@ const Home = ({ data }) => {
             ----------- MAILCHIMP FORM HERE ------------------
           </div>
         </Container>
+
         <div
           css={`
-            z-index: 0;
             grid-row-start: 1;
             grid-column-start: 1;
+            display: none;
+
+            ${device.tablet} {
+              display: block;
+            }
           `}
         >
-          <StaticImage src="../images/cabeza-escultura.png" alt="cabeza escultura" />
+          <StaticImage src="../images/cabeza-escultura-desktop.png" alt="cabeza escultura" />
         </div>
       </BoxedSection>
 
       <BoxedSection
         css={`
+          padding: 100px 0;
+          position: relative;
+          min-height: 600px;
+
           ${device.tablet} {
             display: grid;
           }
@@ -377,10 +423,23 @@ const Home = ({ data }) => {
             <h2>Escucha el podcast de refabulare y navega más profundo.</h2>
           </div>
         </Container>
+
         <div
           css={`
-            grid-row-start: 1;
-            grid-column-start: 1;
+            position: absolute;
+            max-width: 300px;
+            right: 0;
+            bottom: 0;
+            transform: scaleX(-1) translateX(-30%);
+
+            ${device.tablet} {
+              top: 55%;
+              left: 0;
+              bottom: unset;
+              right: unset;
+              transform: translate(-20%, -50%);
+              max-width: clamp(300px, 50vw, 600px);
+            }
           `}
         >
           <StaticImage src="../images/podcast-fondo.png" alt="pilares griegos" />
@@ -413,10 +472,6 @@ const About = styled(Container)`
     align-items: center;
     grid-template-columns: 2fr 1fr;
   }
-`
-
-const Gif = styled.img`
-  max-width: 100%;
 `
 
 const Me = styled(Container)`

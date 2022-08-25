@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import device from "devices"
-import { HeroImagen, HeroTitle, Container } from "components/Atoms"
+import React from 'react'
+import styled from 'styled-components'
+import device from 'devices'
+import { HeroImagen, HeroTitle, Container } from 'components/Atoms'
 
 const Hero = ({ image, title }) => {
   return (
@@ -13,7 +13,6 @@ const Hero = ({ image, title }) => {
 }
 
 const HeroWrapper = styled(Container)`
-  overflow-y: clip;
   padding-bottom: 80px;
   padding-top: 80px;
   min-height: 100vh;
@@ -21,14 +20,14 @@ const HeroWrapper = styled(Container)`
   grid-template-columns: 1fr;
   align-items: center;
   grid-template-areas:
-    "title"
-    "image";
+    'title'
+    'image';
   text-align: center;
 
   ${device.tablet} {
     text-align: left;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "image title";
+    grid-template-areas: 'image title';
   }
 
   ${device.laptop} {
