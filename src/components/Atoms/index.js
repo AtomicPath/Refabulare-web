@@ -6,6 +6,7 @@ import IsotypeWhite from './isotypeWhite'
 import LogoFullBlack from './logoFullBlack'
 import OpenMenuButton from './openMenuButton'
 import StrongHoefler from './strongHoefler'
+import Sistema from './sistema'
 
 export {
   Container,
@@ -16,4 +17,5 @@ export {
   LogoFullBlack,
   OpenMenuButton,
   StrongHoefler,
+  Sistema
 }

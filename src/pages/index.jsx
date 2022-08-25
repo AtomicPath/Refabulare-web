@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
-import { Container, StrongHoefler } from '../components/Atoms'
+import { Container, Sistema, StrongHoefler } from '../components/Atoms'
 import { Hero } from '../components/Molecules'
 import device from 'devices'
 
@@ -330,6 +330,7 @@ const Home = ({ data }) => {
                   font-family: 'Hoefler';
                   font-style: italic;
                   font-weight: bold;
+                  margin-bottom: 50px;
 
                   ${device.tablet} {
                     font-size: 22px;
@@ -368,13 +369,7 @@ const Home = ({ data }) => {
             justify-content: center;
           `}
         >
-          <img
-            src="/Sistema.svg"
-            alt="sistema"
-            css={`
-              width: 100%;
-            `}
-          />
+          <Sistema />
         </Container>
 
         <Container
