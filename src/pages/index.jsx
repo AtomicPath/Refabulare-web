@@ -9,6 +9,7 @@ const Home = ({ data }) => {
   return (
     <>
       <Hero title="Transformemos nuestra historia" image={<StaticImage src="../images/hero.png" alt="refabulare" />}></Hero>
+
       <About as="section">
         <div>
           <h2>Que es...</h2>
@@ -47,6 +48,7 @@ const Home = ({ data }) => {
           <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
         </div>
       </About>
+
       <section
         css={`
           background-image: url('/broken.png');
@@ -67,6 +69,7 @@ const Home = ({ data }) => {
           </OvalWithText>
         </Container>
       </section>
+
       <WhiteBackground>
         <Me>
           <div
