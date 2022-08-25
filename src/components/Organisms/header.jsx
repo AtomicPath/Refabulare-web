@@ -1,9 +1,9 @@
-import { Link } from "gatsby"
-import React, { useState } from "react"
-import device from "devices"
-import { Container, OpenMenuButton, IsotypeWhite } from "components/Atoms"
-import { HeaderMenu } from "components/Molecules"
-import styled from "styled-components"
+import { Link } from 'gatsby'
+import React, { useState } from 'react'
+import device from 'devices'
+import { Container, OpenMenuButton, IsotypeWhite } from 'components/Atoms'
+import { HeaderMenu } from 'components/Molecules'
+import styled from 'styled-components'
 
 const Header = ({ menuItems }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,7 +13,7 @@ const Header = ({ menuItems }) => {
   }
 
   return (
-    <Wrapper className={isMenuOpen ? "opened" : ""}>
+    <Wrapper className={isMenuOpen ? 'opened' : ''}>
       <OpenMenuButton onClick={toggleMenu} isMenuOpen={isMenuOpen} />
 
       <Container
@@ -36,11 +36,7 @@ const Header = ({ menuItems }) => {
           />
         </Link>
 
-        <HeaderMenu
-          menuItems={menuItems}
-          className={isMenuOpen ? "" : "closed"}
-          toggleMenu={toggleMenu}
-        />
+        <HeaderMenu menuItems={menuItems} className={isMenuOpen ? '' : 'closed'} toggleMenu={toggleMenu} />
       </Container>
     </Wrapper>
   )
@@ -62,7 +58,7 @@ const Wrapper = styled.div`
     overflow-x: hidden;
 
     &.opened {
-      position: relative;
+      position: absolute;
     }
   }
 `

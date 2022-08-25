@@ -8,16 +8,41 @@ import device from 'devices'
 const Home = ({ data }) => {
   return (
     <>
-      <Hero title="Transformemos nuestra historia" image={<StaticImage src="../images/hero.png" alt="refabulare" />}></Hero>
+      <Hero title="Transforma tu historia" image={<StaticImage src="../images/hero.png" alt="refabulare" />}></Hero>
 
-      <About as="section">
+      <About as="section" id="refabulare">
         <div>
-          <h2>Que es...</h2>
+          <h2
+            css={`
+              margin: 0;
+              font-size: 30px;
+
+              ${device.tablet} {
+                font-size: 45px;
+              }
+
+              ${device.desktop} {
+                font-size: 60px;
+              }
+            `}
+          >
+            Que es...
+          </h2>
           <StaticImage src="../images/logo-full.png" />
-          <h3>Acompañamiento para la transformación existencial.</h3>
-          <p>
-            Es posible <StrongHoefler>diseñar tu propio futuro</StrongHoefler>
-            para vivir una vida más plena y satisfactoria. Crea un proyecto de vida estructurado e inspirador.
+          <h3
+            css={`
+              font-size: 22px;
+            `}
+          >
+            Acompañamiento para la transformación existencial.
+          </h3>
+          <p
+            css={`
+              margin-bottom: 30px;
+            `}
+          >
+            Es posible <StrongHoefler>diseñar tu propio futuro</StrongHoefler> para vivir una vida más plena y satisfactoria. Crea un proyecto de vida
+            estructurado e inspirador.
           </p>
           <div
             css={`
@@ -28,10 +53,16 @@ const Home = ({ data }) => {
           >
             <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
           </div>
-          <h3>Este programa es para ti, si:</h3>
+          <h3
+            css={`
+              font-size: 22px;
+            `}
+          >
+            Este programa es para ti, si:
+          </h3>
           <ul>
             <li>Cuestionas tu presente y quieres dar mayor significado a tu vida.</li>
-            <li>Te sientes insatisfecha o insatisfecho vida laboral.</li>
+            <li>Te sientes insatisfecha o insatisfecho con tu vida laboral.</li>
             <li>Sientes incertidumbre respecto a tu vida.</li>
             <li>Quieres descubrir una versión más profunda y rica de ti mismo.</li>
           </ul>
@@ -71,7 +102,7 @@ const Home = ({ data }) => {
       </section>
 
       <WhiteBackground>
-        <Me>
+        <Me id="sobre-mi">
           <div
             css={`
               ${device.tablet} {
@@ -88,43 +119,54 @@ const Home = ({ data }) => {
               }
             `}
           >
-            <h2>Sobre mi.</h2>
+            <h2
+              css={`
+                margin: 0;
+                font-size: 30px;
+
+                ${device.tablet} {
+                  font-size: 45px;
+                }
+
+                ${device.desktop} {
+                  font-size: 60px;
+                }
+              `}
+            >
+              Sobre mi.
+            </h2>
             <h3>Soy Enoc Mojica Sauza.</h3>
-            <ul>
+            <ul
+              css={`
+                display: grid;
+                gap: 20px;
+              `}
+            >
               <li>
-                Licenciado en <strong>Economía</strong> por el
-                <strong>Tecnológico de Monterrey.</strong>
+                <strong>Economista</strong>, Maestro en <strong>Prospectiva Estratégica</strong> por el Tecnológico de Monterrey y Doctor en Estudios
+                Humanísticos con estancia de investigación en la <strong>Universidad Hebrea de Jerusalén.</strong>
               </li>
               <li>
-                <strong>Maestría</strong> en
-                <strong>Prospectiva Estratégica.</strong>
+                <strong>Certificado</strong> en Redes de colaboración por la <strong>Universidad Harvard</strong> y en Gestión para el Desarrollo por
+                el <strong>Banco Interamericano de Desarrollo.</strong>
               </li>
               <li>
-                <strong>Doctorado</strong> en
-                <strong>Estudios Humanísticos</strong> con estancia de investigación en la
-                <strong>Universidad Hebrea de Jerusalén.</strong>
+                <strong>
+                  He tomado cursos en: felicidad, ciencia del bienestar, construcción de futuro, diagnóstico de problemas para intervención,
+                  propósito, identidad y significado y mediación de conflictos.
+                </strong>
               </li>
-            </ul>
-            <h3>He tomado cursos y capacitaciones sobre:</h3>
-            <ul>
-              <li>Construcción del Futuro</li>
-              <li>Desarrollo Inclusivo</li>
-              <li>Diagnóstico de Problemas Sociales</li>
-              <li>Felicidad</li>
-              <li>Ciencia del Bienestar</li>
-              <li>Redes de Colaboración</li>
-              <li>Gestión del desarrollo</li>
-              <li>Búsqueda de Propósito y Significado</li>
-              <li>Mediación y Resolución de Conflictos</li>
-              <li>Religión como fuente de conflicto y paz</li>
-              <li>Hinduísmo, Budismo e Islam</li>
+              <li>
+                He viajado por el mundo{' '}
+                <strong>para conocer las distintas formas en las que el ser humano cree, vive y experimenta la existencia humana.</strong>
+              </li>
             </ul>
           </div>
           <div
             css={`
               display: grid;
               gap: 15px;
-              grid-template-columns: 1fr 1fr;
+              grid-template-columns: 1fr;
 
               ${device.tablet} {
                 gap: 30px;
@@ -175,9 +217,9 @@ const Home = ({ data }) => {
             `}
           >
             <p>
-              Por eso, he condensado estos aprendizajes para formular el programa de transformación existencial como una manera de cumplir mi{' '}
-              <strong>propósito de vida</strong>, y <strong>ayudar a los demás</strong> a cumplir los suyos, <strong>motivándolos</strong> y{' '}
-              <strong>acompañándolos</strong> a diseñar su propia ruta hacia una <strong>vida profunda</strong> y<strong>significativa.</strong>
+              Por eso, he decidido condensar estos aprendizajes para formular un programa de transformación existencial. De esta manera{' '}
+              <strong>construyo el propósito de vida al ayudar a los demás a cumplir los suyos</strong>, motivándolos y acompañándolos a diseñar su
+              propia ruta, única e intransferible, <strong>hacia una vida más profunda y significativa.</strong>
             </p>
           </div>
           <div
@@ -226,7 +268,7 @@ const Home = ({ data }) => {
       >
         <BoxedSection
           css={`
-            ${device.tablet} {
+            ${device.laptop} {
               display: grid;
             }
           `}
@@ -235,8 +277,9 @@ const Home = ({ data }) => {
             css={`
               grid-row-start: 1;
               grid-column-start: 1;
+              z-index: 2;
 
-              ${device.tablet} {
+              ${device.laptop} {
                 align-items: center;
                 display: grid;
                 grid-template-areas: 'nothing text';
@@ -249,14 +292,50 @@ const Home = ({ data }) => {
                 grid-area: text;
               `}
             >
-              <h2>Programa de acompañamiento existencial.</h2>
-              <p>
+              <h2
+                css={`
+                  margin: 0 0 50px 0;
+                  font-size: 30px;
+
+                  ${device.tablet} {
+                    font-size: 45px;
+                  }
+
+                  ${device.desktop} {
+                    font-size: 60px;
+                  }
+                `}
+              >
+                Programa de acompañamiento existencial.
+              </h2>
+              <p
+                css={`
+                  margin-bottom: 50px;
+                `}
+              >
                 Conoceremos y profundizaremos en <StrongHoefler>apasionantes historias</StrongHoefler> que se han contado por siglos, nutriendo las
                 grandes ideas existenciales, para <StrongHoefler>extraer los aprendizajes</StrongHoefler> más trascendentes y aplicarlos{' '}
                 <StrongHoefler>estratégicamente a nuestras vidas.</StrongHoefler>
               </p>
-              <h3>CONOCE LOS 4 PASOS:</h3>
-              <ul>
+              <h3
+                css={`
+                  font-size: 22px;
+                `}
+              >
+                CONOCE LOS 4 PASOS:
+              </h3>
+              <ul
+                css={`
+                  font-size: 17px;
+                  font-family: 'Hoefler';
+                  font-style: italic;
+                  font-weight: bold;
+
+                  ${device.tablet} {
+                    font-size: 22px;
+                  }
+                `}
+              >
                 <li>Navega</li>
                 <li>Confronta</li>
                 <li>Diseña</li>
@@ -264,10 +343,16 @@ const Home = ({ data }) => {
               </ul>
             </div>
           </Container>
+
           <div
             css={`
               grid-row-start: 1;
               grid-column-start: 1;
+              z-index: 0;
+
+              .gatsby-image-wrapper {
+                max-width: 45vw;
+              }
             `}
           >
             <StaticImage src="../images/acompañamiento-existencial.png" alt="pilares griegos" />
@@ -301,7 +386,15 @@ const Home = ({ data }) => {
         >
           <h4
             css={`
-              max-width: 800px;
+              max-width: 500px;
+
+              ${device.tablet} {
+                font-size: 26px;
+              }
+
+              ${device.desktop} {
+                max-width: 800px;
+              }
             `}
           >
             Empezarás a ver los resultados de diseñar una vida más intencionada, y obtendrás mayor profundidad para entender tu presente y avanzar
@@ -334,6 +427,7 @@ const Home = ({ data }) => {
       </div>
 
       <BoxedSection
+        id="newsletter"
         css={`
           border: 1px solid var(--color-white);
 
@@ -369,9 +463,42 @@ const Home = ({ data }) => {
             }
           `}
         >
-          <div>
-            <h2>Comienza a Refabular.</h2>
-            <p>
+          <div
+            css={`
+              padding: 70px 0;
+              text-align: center;
+
+              ${device.tablet} {
+                text-align: left;
+              }
+            `}
+          >
+            <h2
+              css={`
+                margin: 0;
+                font-size: 30px;
+
+                ${device.tablet} {
+                  font-size: 45px;
+                }
+
+                ${device.desktop} {
+                  font-size: 60px;
+                }
+              `}
+            >
+              Comienza a Refabular.
+            </h2>
+            <p
+              css={`
+                max-width: 500px;
+                font-size: 17px;
+
+                ${device.tablet} {
+                  font-size: 20px;
+                }
+              `}
+            >
               <StrongHoefler>Contáctanos</StrongHoefler> para crear tu plan de acompañamiento y{' '}
               <StrongHoefler>suscríbete al newsletter</StrongHoefler> para hacernos cuestionamientos que nos muevan el piso.
             </p>
@@ -384,6 +511,11 @@ const Home = ({ data }) => {
             grid-row-start: 1;
             grid-column-start: 1;
             display: none;
+            height: 100%;
+
+            .gatsby-image-wrapper {
+              height: 100%;
+            }
 
             ${device.tablet} {
               display: block;
@@ -395,6 +527,7 @@ const Home = ({ data }) => {
       </BoxedSection>
 
       <BoxedSection
+        id="podcast"
         css={`
           padding: 100px 0;
           position: relative;
@@ -423,7 +556,22 @@ const Home = ({ data }) => {
               grid-area: text;
             `}
           >
-            <h2>Escucha el podcast de refabulare y navega más profundo.</h2>
+            <h2
+              css={`
+                margin: 0;
+                font-size: 30px;
+
+                ${device.tablet} {
+                  font-size: 45px;
+                }
+
+                ${device.desktop} {
+                  font-size: 60px;
+                }
+              `}
+            >
+              Escucha el podcast de refabulare y navega más profundo.
+            </h2>
           </div>
         </Container>
 
@@ -448,6 +596,15 @@ const Home = ({ data }) => {
           <StaticImage src="../images/podcast-fondo.png" alt="pilares griegos" />
         </div>
       </BoxedSection>
+
+      <Container
+        css={`
+          padding-top: 100px;
+          padding-bottom: 100px;
+        `}
+      >
+        ------- SPOTIFY EPISODES HERE ------------
+      </Container>
     </>
   )
 }
@@ -469,11 +626,20 @@ const About = styled(Container)`
   display: grid;
   gap: 30px;
 
+  .gatsby-image-wrapper {
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+
   ${device.tablet} {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     align-items: center;
     grid-template-columns: 2fr 1fr;
+  }
+
+  ${device.desktop} {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 `
 
@@ -486,6 +652,7 @@ const Me = styled(Container)`
   padding-bottom: 50px;
 
   ${device.tablet} {
+    padding-top: 101px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       'featured about'
@@ -494,12 +661,11 @@ const Me = styled(Container)`
 `
 
 const OvalWithText = styled.p`
+  font-family: 'Hoefler', serif;
   background-color: var(--color-black);
   font-size: clamp(14px, 3vw, 28px);
   padding: 45px 40px 40px;
   max-width: 780px;
-  font-family: 'Hoefler', serif;
-  font-style: italic;
   border: 1px solid var(--color-white);
   border-radius: 50%;
   text-align: center;
@@ -507,6 +673,7 @@ const OvalWithText = styled.p`
   z-index: 2;
 
   ${device.tablet} {
+    font-style: italic;
     padding: 80px 100px;
   }
 `

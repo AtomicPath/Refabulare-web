@@ -6,19 +6,19 @@ import { Footer, Header } from './Organisms'
 const menuItems = [
   {
     name: 'Refabulare',
-    link: '/',
+    link: '/#refabulare',
   },
   {
     name: 'Sobre mí',
-    link: '/about',
+    link: '/#sobre-mi',
   },
   {
     name: 'Servicios',
-    link: '/contact',
+    link: '/servicios',
   },
   {
     name: 'Newsletter',
-    link: '/contact',
+    link: '/#newsletter',
   },
   {
     name: 'Podcast',

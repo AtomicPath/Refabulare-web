@@ -9,13 +9,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-anchor-links`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
           formats: [`auto`, `webp`],
-          placeholder: `tracedSVG`,
+          placeholder: `blurred`,
           quality: 95,
           backgroundColor: `transparent`,
         },
