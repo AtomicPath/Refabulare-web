@@ -7,7 +7,7 @@ import device from 'devices'
 import Fade from 'react-reveal/Fade'
 
 const Home = ({ data }) => {
-  const [isOpenModal, setIsOpenModal] = useState(true)
+  const [isOpenModal, setIsOpenModal] = useState(false)
 
   return (
     <>
@@ -61,7 +61,9 @@ const Home = ({ data }) => {
                 }
               `}
             >
-              <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
+              <Fade right duration={1500}>
+                <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
+              </Fade>
             </button>
             <h3
               css={`
@@ -88,7 +90,9 @@ const Home = ({ data }) => {
             }
           `}
         >
-          <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
+          <Fade right duration={1500}>
+            <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
+          </Fade>
         </button>
       </About>
 
@@ -680,7 +684,7 @@ const Home = ({ data }) => {
       {isOpenModal && (
         <VideoModal onClick={() => setIsOpenModal(false)}>
           <button onClick={() => setIsOpenModal(false)}>
-            <img src="/icono-close.svg" />
+            <img src="/icono-close-white.svg" />
           </button>
           <iframe
             src={`https://www.youtube.com/embed/mdCByq4ty50?autoplay=1`}

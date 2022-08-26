@@ -9,7 +9,7 @@ const VideoModal = styled.div`
   bottom: 0;
   padding: 60px 10px;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
 
