@@ -864,6 +864,6 @@ export default Home
 export const Head = () => (
   <>
     <title>Refabulare - Inicio</title>
-    <meta name="description" content="Hello World" />
+    <meta name="description" content="Acompañamiento para la transformación existencial. Déjame acompañarte a crear la historia de vida que deseas experimentar, diseñando de forma intencionada un futuro pleno y satisfactorio." />
   </>
 )
