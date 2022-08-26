@@ -33,16 +33,16 @@ const Footer = () => {
         <FooterRight>
           <p>Síguenos a través de:</p>
           <SocialIcons>
-            <a href="#" target="_blank">
+            <a href="https://open.spotify.com/show/0T5PV5lGieTVJCNqIB1j2G?si=cae5918cabbf4662" target="_blank">
               <img src="/spotify.svg" />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/refabulare/" target="_blank">
               <img src="/instagram.svg" />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://www.facebook.com/refabulare" target="_blank">
               <img src="/facebook.svg" />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://twitter.com/refabulare?s=20&t=RVN9Mp3_fnIwbwlTstu0Pw" target="_blank">
               <img src="/twitter.svg" />
             </a>
           </SocialIcons>
