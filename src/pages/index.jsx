@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
-import { Container, Sistema, StrongHoefler } from '../components/Atoms'
+import { Container, Sistema, StrongHoefler, VideoModal } from '../components/Atoms'
 import { Hero } from '../components/Molecules'
 import device from 'devices'
 import Fade from 'react-reveal/Fade'
 
 const Home = ({ data }) => {
+  const [isOpenModal, setIsOpenModal] = useState(true)
+
   return (
     <>
       <Hero title="Transforma tu historia" image={<StaticImage src="../images/hero.png" alt="refabulare" />}></Hero>
 
       <About as="section" id="refabulare">
-        <div>
+        <div
+          css={`
+            max-width: 600px;
+          `}
+        >
           <Fade left duration={1500}>
             <h2
               css={`
@@ -47,7 +53,8 @@ const Home = ({ data }) => {
               vida estructurado e inspirador.
             </p>
 
-            <div
+            <button
+              onClick={() => setIsOpenModal(true)}
               css={`
                 ${device.tablet} {
                   display: none;
@@ -55,7 +62,7 @@ const Home = ({ data }) => {
               `}
             >
               <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
-            </div>
+            </button>
             <h3
               css={`
                 font-size: 22px;
@@ -71,7 +78,8 @@ const Home = ({ data }) => {
             </ul>
           </Fade>
         </div>
-        <div
+        <button
+          onClick={() => setIsOpenModal(true)}
           css={`
             display: none;
 
@@ -80,10 +88,8 @@ const Home = ({ data }) => {
             }
           `}
         >
-          <Fade right delay={500} duration={1500}>
-            <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
-          </Fade>
-        </div>
+          <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
+        </button>
       </About>
 
       <section
@@ -670,6 +676,21 @@ const Home = ({ data }) => {
       >
         ------- SPOTIFY EPISODES HERE ------------
       </Container>
+
+      {isOpenModal && (
+        <VideoModal onClick={() => setIsOpenModal(false)}>
+          <button onClick={() => setIsOpenModal(false)}>
+            <img src="/icono-close.svg" />
+          </button>
+          <iframe
+            src={`https://www.youtube.com/embed/mdCByq4ty50?autoplay=1`}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Embedded youtube"
+          />
+        </VideoModal>
+      )}
     </>
   )
 }
