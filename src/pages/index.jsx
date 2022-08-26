@@ -617,6 +617,12 @@ const Home = ({ data }) => {
                         font-family: 'Hoefler';
                         font-style: italic;
                         font-size: 20px;
+                        
+                        &:hover {
+                          color: var(--color-black);
+                          background-color: var(--color-white);
+                          border: 1px solid var(--color-black);
+                        }
                       `}
                       type="submit"
                       value="Enviar"
