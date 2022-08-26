@@ -1,11 +1,16 @@
 import { Link } from 'gatsby'
 import React from 'react'
+import Fade from 'react-reveal/Fade'
 
 const Sistema = () => {
   return (
     <svg
       css={`
         width: 100%;
+
+        path {
+          pointer-events: none;
+        }
       `}
       viewBox="0 0 1013 1002"
       fill="none"

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Container, Sistema, StrongHoefler } from '../components/Atoms'
 import { Hero } from '../components/Molecules'
 import device from 'devices'
+import Fade from 'react-reveal/Fade'
 
 const Home = ({ data }) => {
   return (
@@ -12,60 +13,63 @@ const Home = ({ data }) => {
 
       <About as="section" id="refabulare">
         <div>
-          <h2
-            css={`
-              margin: 0;
-              font-size: 30px;
+          <Fade left duration={1500}>
+            <h2
+              css={`
+                margin: 0;
+                font-size: 30px;
 
-              ${device.tablet} {
-                font-size: 45px;
-              }
+                ${device.tablet} {
+                  font-size: 45px;
+                }
 
-              ${device.desktop} {
-                font-size: 60px;
-              }
-            `}
-          >
-            Que es...
-          </h2>
-          <StaticImage src="../images/logo-full.png" />
-          <h3
-            css={`
-              font-size: 22px;
-            `}
-          >
-            Acompañamiento para la transformación existencial.
-          </h3>
-          <p
-            css={`
-              margin-bottom: 30px;
-            `}
-          >
-            Es posible <StrongHoefler>diseñar tu propio futuro</StrongHoefler> para vivir una vida más plena y satisfactoria. Crea un proyecto de vida
-            estructurado e inspirador.
-          </p>
-          <div
-            css={`
-              ${device.tablet} {
-                display: none;
-              }
-            `}
-          >
-            <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
-          </div>
-          <h3
-            css={`
-              font-size: 22px;
-            `}
-          >
-            Este programa es para ti, si:
-          </h3>
-          <ul>
-            <li>Cuestionas tu presente y quieres dar mayor significado a tu vida.</li>
-            <li>Te sientes insatisfecha o insatisfecho con tu vida laboral.</li>
-            <li>Sientes incertidumbre respecto a tu vida.</li>
-            <li>Quieres descubrir una versión más profunda y rica de ti mismo.</li>
-          </ul>
+                ${device.desktop} {
+                  font-size: 60px;
+                }
+              `}
+            >
+              Que es...
+            </h2>
+            <StaticImage src="../images/logo-full.png" />
+            <h3
+              css={`
+                font-size: 22px;
+              `}
+            >
+              Acompañamiento para la transformación existencial.
+            </h3>
+            <p
+              css={`
+                margin-bottom: 30px;
+              `}
+            >
+              Es posible <StrongHoefler>diseñar tu propio futuro</StrongHoefler> para vivir una vida más plena y satisfactoria. Crea un proyecto de
+              vida estructurado e inspirador.
+            </p>
+
+            <div
+              css={`
+                ${device.tablet} {
+                  display: none;
+                }
+              `}
+            >
+              <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
+            </div>
+            <h3
+              css={`
+                font-size: 22px;
+              `}
+            >
+              Este programa es para ti, si:
+            </h3>
+            <ul>
+              <li>Cuestionas tu presente y quieres dar mayor significado a tu vida.</li>
+              <li>Te sientes insatisfecha o insatisfecho con tu vida laboral.</li>
+              <li>Sientes incertidumbre respecto a tu vida.</li>
+              <li>Quieres descubrir una versión más profunda y rica de ti mismo.</li>
+            </ul>
+          </Fade>
         </div>
         <div
           css={`
@@ -76,7 +80,9 @@ const Home = ({ data }) => {
             }
           `}
         >
-          <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
+          <Fade right delay={500} duration={1500}>
+            <StaticImage src="../images/about-video-preview.png" alt="refabulare video" />
+          </Fade>
         </div>
       </About>
 
@@ -95,9 +101,11 @@ const Home = ({ data }) => {
             justify-content: center;
           `}
         >
-          <OvalWithText>
-            Déjame acompañarte a crear la historia de vida que deseas experimentar, diseñando de forma intencionada un futuro pleno y satisfactorio.
-          </OvalWithText>
+          <Fade bottom duration={1500}>
+            <OvalWithText>
+              Déjame acompañarte a crear la historia de vida que deseas experimentar, diseñando de forma intencionada un futuro pleno y satisfactorio.
+            </OvalWithText>
+          </Fade>
         </Container>
       </section>
 
@@ -110,7 +118,9 @@ const Home = ({ data }) => {
               }
             `}
           >
-            <StaticImage src="../images/about-enoc.png" alt="Enoc Mojica Sauza" />
+            <Fade bottom duration={1500} distance="200px">
+              <StaticImage src="../images/about-enoc.png" alt="Enoc Mojica Sauza" />
+            </Fade>
           </div>
           <div
             css={`
@@ -119,54 +129,61 @@ const Home = ({ data }) => {
               }
             `}
           >
-            <h2
-              css={`
-                margin: 0;
-                font-size: 30px;
+            <Fade bottom duration={1500} delay={500} distance="200px">
+              <h2
+                css={`
+                  margin: 0;
+                  font-size: 30px;
 
-                ${device.tablet} {
-                  font-size: 45px;
-                }
+                  ${device.tablet} {
+                    font-size: 45px;
+                  }
 
-                ${device.desktop} {
-                  font-size: 60px;
-                }
-              `}
-            >
-              Sobre mi.
-            </h2>
-            <h3>Soy Enoc Mojica Sauza.</h3>
-            <ul
-              css={`
-                display: grid;
-                gap: 20px;
-              `}
-            >
-              <li>
-                <strong>Economista</strong>, Maestro en <strong>Prospectiva Estratégica</strong> por el Tecnológico de Monterrey y Doctor en Estudios
-                Humanísticos con estancia de investigación en la <strong>Universidad Hebrea de Jerusalén.</strong>
-              </li>
-              <li>
-                <strong>Certificado</strong> en Redes de colaboración por la <strong>Universidad Harvard</strong> y en Gestión para el Desarrollo por
-                el <strong>Banco Interamericano de Desarrollo.</strong>
-              </li>
-              <li>
-                <strong>
-                  He tomado cursos en: felicidad, ciencia del bienestar, construcción de futuro, diagnóstico de problemas para intervención,
-                  propósito, identidad y significado y mediación de conflictos.
-                </strong>
-              </li>
-              <li>
-                He viajado por el mundo{' '}
-                <strong>para conocer las distintas formas en las que el ser humano cree, vive y experimenta la existencia humana.</strong>
-              </li>
-            </ul>
+                  ${device.desktop} {
+                    font-size: 60px;
+                  }
+                `}
+              >
+                Sobre mi.
+              </h2>
+              <h3>Soy Enoc Mojica Sauza.</h3>
+              <ul
+                css={`
+                  display: grid;
+                  gap: 20px;
+                `}
+              >
+                <li>
+                  <strong>Economista</strong>, Maestro en <strong>Prospectiva Estratégica</strong> por el Tecnológico de Monterrey y Doctor en
+                  Estudios Humanísticos con estancia de investigación en la <strong>Universidad Hebrea de Jerusalén.</strong>
+                </li>
+                <li>
+                  <strong>Certificado</strong> en Redes de colaboración por la <strong>Universidad Harvard</strong> y en Gestión para el Desarrollo
+                  por el <strong>Banco Interamericano de Desarrollo.</strong>
+                </li>
+                <li>
+                  <strong>
+                    He tomado cursos en: felicidad, ciencia del bienestar, construcción de futuro, diagnóstico de problemas para intervención,
+                    propósito, identidad y significado y mediación de conflictos.
+                  </strong>
+                </li>
+                <li>
+                  He viajado por el mundo{' '}
+                  <strong>para conocer las distintas formas en las que el ser humano cree, vive y experimenta la existencia humana.</strong>
+                </li>
+              </ul>
+            </Fade>
           </div>
+
           <div
             css={`
               display: grid;
               gap: 15px;
               grid-template-columns: 1fr;
+
+              .gatsby-image-wrapper {
+                height: 100%;
+              }
 
               ${device.tablet} {
                 gap: 30px;
@@ -175,9 +192,15 @@ const Home = ({ data }) => {
               }
             `}
           >
-            <StaticImage src="../images/enoc-1.png" alt="Enoc mojica" />
-            <StaticImage src="../images/enoc-2.png" alt="Enoc mojica" />
-            <StaticImage src="../images/enoc-3.png" alt="Enoc mojica" />
+            <Fade bottom duration={1500} distance="200px">
+              <StaticImage src="../images/enoc-1.png" alt="Enoc mojica" />
+            </Fade>
+            <Fade bottom duration={1500} delay={500} distance="200px">
+              <StaticImage src="../images/enoc-2.png" alt="Enoc mojica" />
+            </Fade>
+            <Fade bottom duration={1500} delay={1000} distance="200px">
+              <StaticImage src="../images/enoc-3.png" alt="Enoc mojica" />
+            </Fade>
           </div>
         </Me>
 
@@ -202,12 +225,14 @@ const Home = ({ data }) => {
               }
             `}
           >
-            <p>
-              Después de todo un trayecto académico, profesional y experiencial, llegué al convencimiento de que{' '}
-              <strong>
-                la mejor forma de sumar a la construcción de un mejor mundo es a través del trabajo intencionado con el desarrollo del individuo.
-              </strong>
-            </p>
+            <Fade bottom duration={1500} distance="200px">
+              <p>
+                Después de todo un trayecto académico, profesional y experiencial, llegué al convencimiento de que{' '}
+                <strong>
+                  la mejor forma de sumar a la construcción de un mejor mundo es a través del trabajo intencionado con el desarrollo del individuo.
+                </strong>
+              </p>
+            </Fade>
           </div>
           <div
             css={`
@@ -216,11 +241,13 @@ const Home = ({ data }) => {
               }
             `}
           >
-            <p>
-              Por eso, he decidido condensar estos aprendizajes para formular un programa de transformación existencial. De esta manera{' '}
-              <strong>construyo el propósito de vida al ayudar a los demás a cumplir los suyos</strong>, motivándolos y acompañándolos a diseñar su
-              propia ruta, única e intransferible, <strong>hacia una vida más profunda y significativa.</strong>
-            </p>
+            <Fade bottom duration={1500} distance="200px">
+              <p>
+                Por eso, he decidido condensar estos aprendizajes para formular un programa de transformación existencial. De esta manera{' '}
+                <strong>construyo el propósito de vida al ayudar a los demás a cumplir los suyos</strong>, motivándolos y acompañándolos a diseñar su
+                propia ruta, única e intransferible, <strong>hacia una vida más profunda y significativa.</strong>
+              </p>
+            </Fade>
           </div>
           <div
             css={`
@@ -231,7 +258,9 @@ const Home = ({ data }) => {
               }
             `}
           >
-            <StaticImage src="../images/pilar.png" alt="pilar" />
+            <Fade bottom duration={1500} distance="200px">
+              <StaticImage src="../images/pilar.png" alt="pilar" />
+            </Fade>
           </div>
         </Container>
       </WhiteBackground>
@@ -292,56 +321,58 @@ const Home = ({ data }) => {
                 grid-area: text;
               `}
             >
-              <h2
-                css={`
-                  margin: 0 0 50px 0;
-                  font-size: 30px;
+              <Fade right duration={1500} distance="200px">
+                <h2
+                  css={`
+                    margin: 0 0 50px 0;
+                    font-size: 30px;
 
-                  ${device.tablet} {
-                    font-size: 45px;
-                  }
+                    ${device.tablet} {
+                      font-size: 45px;
+                    }
 
-                  ${device.desktop} {
-                    font-size: 60px;
-                  }
-                `}
-              >
-                Programa de acompañamiento existencial.
-              </h2>
-              <p
-                css={`
-                  margin-bottom: 50px;
-                `}
-              >
-                Conoceremos y profundizaremos en <StrongHoefler>apasionantes historias</StrongHoefler> que se han contado por siglos, nutriendo las
-                grandes ideas existenciales, para <StrongHoefler>extraer los aprendizajes</StrongHoefler> más trascendentes y aplicarlos{' '}
-                <StrongHoefler>estratégicamente a nuestras vidas.</StrongHoefler>
-              </p>
-              <h3
-                css={`
-                  font-size: 22px;
-                `}
-              >
-                CONOCE LOS 4 PASOS:
-              </h3>
-              <ul
-                css={`
-                  font-size: 17px;
-                  font-family: 'Hoefler';
-                  font-style: italic;
-                  font-weight: bold;
-                  margin-bottom: 50px;
-
-                  ${device.tablet} {
+                    ${device.desktop} {
+                      font-size: 60px;
+                    }
+                  `}
+                >
+                  Programa de acompañamiento existencial.
+                </h2>
+                <p
+                  css={`
+                    margin-bottom: 50px;
+                  `}
+                >
+                  Conoceremos y profundizaremos en <StrongHoefler>apasionantes historias</StrongHoefler> que se han contado por siglos, nutriendo las
+                  grandes ideas existenciales, para <StrongHoefler>extraer los aprendizajes</StrongHoefler> más trascendentes y aplicarlos{' '}
+                  <StrongHoefler>estratégicamente a nuestras vidas.</StrongHoefler>
+                </p>
+                <h3
+                  css={`
                     font-size: 22px;
-                  }
-                `}
-              >
-                <li>Navega</li>
-                <li>Confronta</li>
-                <li>Diseña</li>
-                <li>Edifica</li>
-              </ul>
+                  `}
+                >
+                  CONOCE LOS 4 PASOS:
+                </h3>
+                <ul
+                  css={`
+                    font-size: 17px;
+                    font-family: 'Hoefler';
+                    font-style: italic;
+                    font-weight: bold;
+                    margin-bottom: 50px;
+
+                    ${device.tablet} {
+                      font-size: 22px;
+                    }
+                  `}
+                >
+                  <li>Navega</li>
+                  <li>Confronta</li>
+                  <li>Diseña</li>
+                  <li>Edifica</li>
+                </ul>
+              </Fade>
             </div>
           </Container>
 
@@ -356,7 +387,9 @@ const Home = ({ data }) => {
               }
             `}
           >
-            <StaticImage src="../images/acompañamiento-existencial.png" alt="pilares griegos" />
+            <Fade left duration={1500} distance="200px">
+              <StaticImage src="../images/acompañamiento-existencial.png" alt="pilares griegos" />
+            </Fade>
           </div>
         </BoxedSection>
 
@@ -379,22 +412,24 @@ const Home = ({ data }) => {
             text-align: center;
           `}
         >
-          <h4
-            css={`
-              max-width: 500px;
+          <Fade bottom duration={1500} distance="200px">
+            <h4
+              css={`
+                max-width: 500px;
 
-              ${device.tablet} {
-                font-size: 26px;
-              }
+                ${device.tablet} {
+                  font-size: 26px;
+                }
 
-              ${device.desktop} {
-                max-width: 800px;
-              }
-            `}
-          >
-            Empezarás a ver los resultados de diseñar una vida más intencionada, y obtendrás mayor profundidad para entender tu presente y avanzar
-            hacia tu futuro.
-          </h4>
+                ${device.desktop} {
+                  max-width: 800px;
+                }
+              `}
+            >
+              Empezarás a ver los resultados de diseñar una vida más intencionada, y obtendrás mayor profundidad para entender tu presente y avanzar
+              hacia tu futuro.
+            </h4>
+          </Fade>
         </Container>
 
         <Container>
@@ -405,7 +440,9 @@ const Home = ({ data }) => {
               }
             `}
           >
-            <StaticImage src="../images/libreta.png" />
+            <Fade bottom duration={1500} distance="200px">
+              <StaticImage src="../images/libreta.png" />
+            </Fade>
           </div>
           <div
             css={`
@@ -416,7 +453,9 @@ const Home = ({ data }) => {
               }
             `}
           >
-            <StaticImage src="../images/libreta-desktop.png" />
+            <Fade bottom duration={1500} distance="200px">
+              <StaticImage src="../images/libreta-desktop.png" />
+            </Fade>
           </div>
         </Container>
       </div>
@@ -442,7 +481,9 @@ const Home = ({ data }) => {
             }
           `}
         >
-          <StaticImage src="../images/cabeza-escultura.png" alt="cabeza escultura" />
+          <Fade bottom duration={1500} distance="200px">
+            <StaticImage src="../images/cabeza-escultura.png" alt="cabeza escultura" />
+          </Fade>
         </div>
 
         <Container
@@ -468,36 +509,38 @@ const Home = ({ data }) => {
               }
             `}
           >
-            <h2
-              css={`
-                margin: 0;
-                font-size: 30px;
+            <Fade bottom duration={1500} distance="200px">
+              <h2
+                css={`
+                  margin: 0;
+                  font-size: 30px;
 
-                ${device.tablet} {
-                  font-size: 45px;
-                }
+                  ${device.tablet} {
+                    font-size: 45px;
+                  }
 
-                ${device.desktop} {
-                  font-size: 60px;
-                }
-              `}
-            >
-              Comienza a Refabular.
-            </h2>
-            <p
-              css={`
-                max-width: 500px;
-                font-size: 17px;
+                  ${device.desktop} {
+                    font-size: 60px;
+                  }
+                `}
+              >
+                Comienza a Refabular.
+              </h2>
+              <p
+                css={`
+                  max-width: 500px;
+                  font-size: 17px;
 
-                ${device.tablet} {
-                  font-size: 20px;
-                }
-              `}
-            >
-              <StrongHoefler>Contáctanos</StrongHoefler> para crear tu plan de acompañamiento y{' '}
-              <StrongHoefler>suscríbete al newsletter</StrongHoefler> para hacernos cuestionamientos que nos muevan el piso.
-            </p>
-            ----------- MAILCHIMP FORM HERE ------------------
+                  ${device.tablet} {
+                    font-size: 20px;
+                  }
+                `}
+              >
+                <StrongHoefler>Contáctanos</StrongHoefler> para crear tu plan de acompañamiento y{' '}
+                <StrongHoefler>suscríbete al newsletter</StrongHoefler> para hacernos cuestionamientos que nos muevan el piso.
+              </p>
+              ----------- MAILCHIMP FORM HERE ------------------
+            </Fade>
           </div>
         </Container>
 
@@ -517,7 +560,9 @@ const Home = ({ data }) => {
             }
           `}
         >
-          <StaticImage src="../images/cabeza-escultura-desktop.png" alt="cabeza escultura" />
+          <Fade right duration={1500} distance="200px">
+            <StaticImage src="../images/cabeza-escultura-desktop.png" alt="cabeza escultura" />
+          </Fade>
         </div>
       </BoxedSection>
 
@@ -551,22 +596,24 @@ const Home = ({ data }) => {
               grid-area: text;
             `}
           >
-            <h2
-              css={`
-                margin: 0;
-                font-size: 30px;
+            <Fade bottom duration={1500} distance="200px">
+              <h2
+                css={`
+                  margin: 0;
+                  font-size: 30px;
 
-                ${device.tablet} {
-                  font-size: 45px;
-                }
+                  ${device.tablet} {
+                    font-size: 45px;
+                  }
 
-                ${device.desktop} {
-                  font-size: 60px;
-                }
-              `}
-            >
-              Escucha el podcast de refabulare y navega más profundo.
-            </h2>
+                  ${device.desktop} {
+                    font-size: 60px;
+                  }
+                `}
+              >
+                Escucha el podcast de refabulare y navega más profundo.
+              </h2>
+            </Fade>
           </div>
         </Container>
 
@@ -588,7 +635,30 @@ const Home = ({ data }) => {
             }
           `}
         >
-          <StaticImage src="../images/podcast-fondo.png" alt="pilares griegos" />
+          <div
+            css={`
+              ${device.tablet} {
+                display: none;
+              }
+            `}
+          >
+            <Fade left duration={1500} distance="200px">
+              <StaticImage src="../images/podcast-fondo.png" alt="pilares griegos" />
+            </Fade>
+          </div>
+
+          <div
+            css={`
+              display: none;
+              ${device.tablet} {
+                display: block;
+              }
+            `}
+          >
+            <Fade left duration={1500} distance="200px">
+              <StaticImage src="../images/podcast-fondo.png" alt="pilares griegos" />
+            </Fade>
+          </div>
         </div>
       </BoxedSection>
 
