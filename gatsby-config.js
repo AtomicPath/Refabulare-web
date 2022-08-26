@@ -1,14 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: "Refabulare.",
-    description: "Acompañamiento para la transformación existencial. Déjame acompañarte a crear la historia de vida que deseas experimentar, diseñando de forma intencionada un futuro pleno y satisfactorio.",
-    siteUrl: "https://refabulare.com/",
+    title: 'Refabulare.',
+    description:
+      'Acompañamiento para la transformación existencial. Déjame acompañarte a crear la historia de vida que deseas experimentar, diseñando de forma intencionada un futuro pleno y satisfactorio.',
+    siteUrl: 'https://refabulare.com/',
   },
   plugins: [
     `gatsby-plugin-root-import`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-anchor-links`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -29,7 +31,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {

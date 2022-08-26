@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { HeaderMenuItem } from 'components/Atoms'
-import { Link } from 'gatsby'
 import device from 'devices'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 const HeaderMenu = ({ menuItems, className, toggleMenu }) => {
   return (
@@ -14,7 +14,7 @@ const HeaderMenu = ({ menuItems, className, toggleMenu }) => {
               {item.name}
             </a>
           ) : (
-            <Link to={item.link}>{item.name}</Link>
+            <AnchorLink to={item.link}>{item.name}</AnchorLink>
           )}
         </HeaderMenuItem>
       ))}

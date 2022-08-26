@@ -6,12 +6,13 @@ import { Hero, PodcastItem } from '../components/Molecules'
 import device from 'devices'
 import Fade from 'react-reveal/Fade'
 import { PodcastGrid } from '../components/Organisms'
+import Layout from '../components/layout'
 
 const Home = ({ data }) => {
   const [isOpenModal, setIsOpenModal] = useState(false)
 
   return (
-    <>
+    <Layout>
       <Hero title="Transforma tu historia" image={<StaticImage src="../images/hero.png" alt="refabulare" />}></Hero>
 
       <About as="section" id="refabulare">
@@ -556,10 +557,9 @@ const Home = ({ data }) => {
                   max-width: 300px;
                   display: grid;
                   gap: 10px;
-                  justify-content: center;
                   margin: 0 auto;
+
                   ${device.tablet} {
-                    justify-content: left;
                     margin: 0;
                   }
                 `}
@@ -572,6 +572,7 @@ const Home = ({ data }) => {
               >
                 <input
                   css={`
+                    border: 0;
                     width: 100%;
                     padding: 10px;
                     background-color: #d9d9d9;
@@ -587,10 +588,12 @@ const Home = ({ data }) => {
                 />
                 <input
                   css={`
+                    border: 0;
                     width: 100%;
                     padding: 10px;
                     background-color: #d9d9d9;
                     font-size: 20px;
+
                     ::placeholder {
                       color: var(--color-black);
                     }
@@ -633,6 +636,10 @@ const Home = ({ data }) => {
             grid-column-start: 1;
             display: none;
             height: 100%;
+
+            .react-reveal {
+              height: 100%;
+            }
 
             .gatsby-image-wrapper {
               height: 100%;
@@ -777,7 +784,7 @@ const Home = ({ data }) => {
           />
         </VideoModal>
       )}
-    </>
+    </Layout>
   )
 }
 

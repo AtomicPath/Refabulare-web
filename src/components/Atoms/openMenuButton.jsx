@@ -1,15 +1,11 @@
-import React from "react"
-import styled from "styled-components"
-import device from "devices"
+import React from 'react'
+import styled from 'styled-components'
+import device from 'devices'
 
 const OpenMenuButton = ({ onClick, isMenuOpen }) => {
   return (
     <Button onClick={onClick} isMenuOpen={isMenuOpen}>
-      {isMenuOpen ? (
-        <img src="/icono-close.svg" alt="Menu" />
-      ) : (
-        <img src="/icono-menu-mobile.svg" alt="Menu" />
-      )}
+      {isMenuOpen ? <img src="/icono-close.svg" alt="close" /> : <img src="/icono-menu-mobile.svg" alt="Menu" />}
     </Button>
   )
 }
