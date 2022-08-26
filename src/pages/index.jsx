@@ -563,7 +563,7 @@ const Home = ({ data }) => {
                     margin: 0;
                   }
                 `}
-                action="https://gmail.us9.list-manage.com/subscribe/post?u=76bd53114bf695992a3aeaaa3&amp;id=f18e454073&amp;f_id=002606e1f0"
+                action="https://gmail.us8.list-manage.com/subscribe/post?u=230b9e1d627e1de0f4d862abe&amp;id=b4d2673f35&amp;f_id=00d675e0f0"
                 method="post"
                 id="mc-embedded-subscribe-form"
                 name="mc-embedded-subscribe-form"
@@ -603,7 +603,7 @@ const Home = ({ data }) => {
                   placeholder="Nombre"
                 />
                 <div css="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input type="text" name="b_76bd53114bf695992a3aeaaa3_f18e454073" tabIndex="-1" />
+                  <input type="text" name="b_230b9e1d627e1de0f4d862abe_b4d2673f35" tabIndex="-1" />
                 </div>
                 <div>
                   <div>
