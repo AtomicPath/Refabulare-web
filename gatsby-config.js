@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Refabulare.",
-    description: "Agregar la descripción aqui.",
-    siteUrl: "https://lorogranada.com/",
+    description: "Acompañamiento para la transformación existencial. Déjame acompañarte a crear la historia de vida que deseas experimentar, diseñando de forma intencionada un futuro pleno y satisfactorio.",
+    siteUrl: "https://refabulare.com/",
   },
   plugins: [
     `gatsby-plugin-root-import`,
