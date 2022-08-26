@@ -550,7 +550,79 @@ const Home = ({ data }) => {
                 <StrongHoefler>Contáctanos</StrongHoefler> para crear tu plan de acompañamiento y{' '}
                 <StrongHoefler>suscríbete al newsletter</StrongHoefler> para hacernos cuestionamientos que nos muevan el piso.
               </p>
-              ----------- MAILCHIMP FORM HERE ------------------
+              <form
+                css={`
+                  width: 100%;
+                  max-width: 300px;
+                  display: grid;
+                  gap: 10px;
+                  justify-content: center;
+                  margin: 0 auto;
+                  ${device.tablet} {
+                    justify-content: left;
+                    margin: 0;
+                  }
+                `}
+                action="https://gmail.us9.list-manage.com/subscribe/post?u=76bd53114bf695992a3aeaaa3&amp;id=f18e454073&amp;f_id=002606e1f0"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                class="validate"
+                target="_self"
+              >
+                <input
+                  css={`
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #d9d9d9;
+                    font-size: 20px;
+                    ::placeholder {
+                      color: var(--color-black);
+                    }
+                  `}
+                  type="email"
+                  name="EMAIL"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  css={`
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #d9d9d9;
+                    font-size: 20px;
+                    ::placeholder {
+                      color: var(--color-black);
+                    }
+                  `}
+                  type="text"
+                  name="FNAME"
+                  placeholder="Nombre"
+                />
+                <div css="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_76bd53114bf695992a3aeaaa3_f18e454073" tabindex="-1" />
+                </div>
+                <div>
+                  <div>
+                    <input
+                      css={`
+                        width: 100%;
+                        padding: 10px;
+                        color: var(--color-white);
+                        background-color: var(--color-black);
+                        border: 1px solid var(--color-white);
+                        font-family: 'Hoefler';
+                        font-style: italic;
+                        font-size: 20px;
+                      `}
+                      type="submit"
+                      value="Enviar"
+                      name="subscribe"
+                      class="button"
+                    />
+                  </div>
+                </div>
+              </form>
             </Fade>
           </div>
         </Container>
