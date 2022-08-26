@@ -1,4 +1,5 @@
-import Footer from "./footer"
-import Header from "./header"
+import Footer from './footer'
+import Header from './header'
+import PodcastGrid from './PodcastGrid'
 
-export { Footer, Header }
+export { Footer, Header, PodcastGrid }

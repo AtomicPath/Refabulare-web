@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import { Container, Sistema, StrongHoefler, VideoModal } from '../components/Atoms'
-import { Hero } from '../components/Molecules'
+import { Hero, PodcastItem } from '../components/Molecules'
 import device from 'devices'
 import Fade from 'react-reveal/Fade'
+import { PodcastGrid } from '../components/Organisms'
 
 const Home = ({ data }) => {
   const [isOpenModal, setIsOpenModal] = useState(false)
@@ -609,7 +610,7 @@ const Home = ({ data }) => {
             <Fade bottom duration={1500} distance="200px">
               <h2
                 css={`
-                  margin: 0;
+                  margin: 0 0 1em;
                   font-size: 30px;
 
                   ${device.tablet} {
@@ -623,6 +624,8 @@ const Home = ({ data }) => {
               >
                 Escucha el podcast de refabulare y navega más profundo.
               </h2>
+
+              <img src="/spotify-gray.svg" />
             </Fade>
           </div>
         </Container>
@@ -674,11 +677,18 @@ const Home = ({ data }) => {
 
       <Container
         css={`
-          padding-top: 100px;
           padding-bottom: 100px;
+
+          ${device.tablet} {
+            padding-bottom: 150px;
+          }
+
+          ${device.laptop} {
+            padding-bottom: 200px;
+          }
         `}
       >
-        ------- SPOTIFY EPISODES HERE ------------
+        <PodcastGrid />
       </Container>
 
       {isOpenModal && (
