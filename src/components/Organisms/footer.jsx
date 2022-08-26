@@ -34,16 +34,16 @@ const Footer = () => {
           <p>Síguenos a través de:</p>
           <SocialIcons>
             <a href="https://open.spotify.com/show/0T5PV5lGieTVJCNqIB1j2G?si=cae5918cabbf4662" target="_blank">
-              <img src="/spotify.svg" />
+              <img src="/spotify.svg" alt="spotify" />
             </a>
             <a href="https://www.instagram.com/refabulare/" target="_blank">
-              <img src="/instagram.svg" />
+              <img src="/instagram.svg" alt="instagram" />
             </a>
             <a href="https://www.facebook.com/refabulare" target="_blank">
-              <img src="/facebook.svg" />
+              <img src="/facebook.svg" alt="facebook" />
             </a>
             <a href="https://twitter.com/refabulare?s=20&t=RVN9Mp3_fnIwbwlTstu0Pw" target="_blank">
-              <img src="/twitter.svg" />
+              <img src="/twitter.svg" alt="twitter" />
             </a>
           </SocialIcons>
         </FooterRight>

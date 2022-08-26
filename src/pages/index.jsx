@@ -37,7 +37,7 @@ const Home = ({ data }) => {
             >
               Que es...
             </h2>
-            <StaticImage src="../images/logo-full.png" />
+            <StaticImage src="../images/logo-full.png" alt="refabulare logo" />
             <h3
               css={`
                 font-size: 22px;
@@ -452,7 +452,7 @@ const Home = ({ data }) => {
             `}
           >
             <Fade bottom duration={1500} distance="200px">
-              <StaticImage src="../images/libreta.png" />
+              <StaticImage src="../images/libreta.png" alt="libreta" />
             </Fade>
           </div>
           <div
@@ -465,7 +465,7 @@ const Home = ({ data }) => {
             `}
           >
             <Fade bottom duration={1500} distance="200px">
-              <StaticImage src="../images/libreta-desktop.png" />
+              <StaticImage src="../images/libreta-desktop.png" alt="libreta" />
             </Fade>
           </div>
         </Container>
@@ -567,7 +567,7 @@ const Home = ({ data }) => {
                 method="post"
                 id="mc-embedded-subscribe-form"
                 name="mc-embedded-subscribe-form"
-                class="validate"
+                className="validate"
                 target="_self"
               >
                 <input
@@ -600,7 +600,7 @@ const Home = ({ data }) => {
                   placeholder="Nombre"
                 />
                 <div css="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input type="text" name="b_76bd53114bf695992a3aeaaa3_f18e454073" tabindex="-1" />
+                  <input type="text" name="b_76bd53114bf695992a3aeaaa3_f18e454073" tabIndex="-1" />
                 </div>
                 <div>
                   <div>
@@ -618,7 +618,7 @@ const Home = ({ data }) => {
                       type="submit"
                       value="Enviar"
                       name="subscribe"
-                      class="button"
+                      className="button"
                     />
                   </div>
                 </div>
@@ -697,7 +697,7 @@ const Home = ({ data }) => {
                 Escucha el podcast de refabulare y navega más profundo.
               </h2>
 
-              <img src="/spotify-gray.svg" />
+              <img src="/spotify-gray.svg" alt="spotify gray" />
             </Fade>
           </div>
         </Container>
@@ -766,7 +766,7 @@ const Home = ({ data }) => {
       {isOpenModal && (
         <VideoModal onClick={() => setIsOpenModal(false)}>
           <button onClick={() => setIsOpenModal(false)}>
-            <img src="/icono-close-white.svg" />
+            <img src="/icono-close-white.svg" alt="icono refabulare" />
           </button>
           <iframe
             src={`https://www.youtube.com/embed/mdCByq4ty50?autoplay=1`}

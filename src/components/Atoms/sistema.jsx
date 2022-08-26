@@ -68,8 +68,8 @@ const Sistema = () => {
         />
       </g>
       <defs>
-        <filter id="filter0_d_15_118" x="0" y="0" width="1013" height="1002" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <filter id="filter0_d_15_118" x="0" y="0" width="1013" height="1002" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
           <feOffset dy="4" />
           <feGaussianBlur stdDeviation="2" />
