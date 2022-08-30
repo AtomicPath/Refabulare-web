@@ -13,7 +13,7 @@ const Home = ({ data }) => {
 
   return (
     <Layout>
-      <Hero title="Transforma tu historia" image={<StaticImage src="../images/hero.png" alt="refabulare" />}></Hero>
+      <Hero title="Transforma tu historia" image={<StaticImage src="../images/hero.png" alt="refabulare" />} />
 
       <About as="section" id="refabulare">
         <div
@@ -36,7 +36,7 @@ const Home = ({ data }) => {
                 }
               `}
             >
-              Que es...
+              Qué es...
             </h2>
             <StaticImage src="../images/logo-full.png" alt="refabulare logo" />
             <h3
@@ -156,7 +156,7 @@ const Home = ({ data }) => {
                   }
                 `}
               >
-                Sobre mi.
+                Sobre mí.
               </h2>
               <h3>Soy Enoc Mojica Sauza.</h3>
               <ul
